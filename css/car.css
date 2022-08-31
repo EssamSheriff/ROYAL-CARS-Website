@@ -1,0 +1,401 @@
+:root{
+    --orange:#F77D0A;
+    --dark:#2B2E4A;
+    --very-dark:#1C1E32;
+    --section-color: #F4F5F8;  
+    --icon-color:#8486A0;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.main-btn{
+    background-color: var(--orange);
+    color: white;
+    width: 200px;
+}
+.main-btn:hover{
+    background-color: #b25703;
+    color: white;
+}
+
+.main-text h1{
+    color: var(--orange);
+    font-size: 6rem;
+    font-weight: 900;
+}
+.main-text p{
+    font-size: 3rem;
+    font-weight: 900;    
+}
+.main-text p span{
+    color: var(--orange);
+    font-size: 3rem;
+    font-weight: 900;
+}
+/* Start header seaction */
+.header{
+    background-color: var(--very-dark);
+}
+.header .contact a {
+    color: var(--icon-color);
+    padding: 2px;
+    text-decoration: none;
+}
+.header .contact a:hover {
+    text-decoration: underline;
+}
+.header .contact .icon_list svg{
+    padding: 10px;
+}
+.navbar{
+    background-color: var(--dark);
+    bottom: 30px;
+    border-radius: 15px;
+}
+@media (max-width:767.9px) {
+     .navbar{
+    bottom: 0px;
+    border-radius: 0px;
+    }    
+}
+ .navbar .navbar-brand{
+    color: var(--orange);
+}
+ .navbar .nav-link{
+    text-decoration: none;
+    color: white;
+}
+ .navbar .nav-link:active,
+ .navbar .nav-link:hover{
+    color: var(--orange);
+}
+ .navbar .dropdown-menu a:hover{
+    color: var(--orange);
+}
+.navbar-toggler svg:hover{
+    color: var(--orange);
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-toggler svg{
+    color: white;
+}
+.date,.time{
+    width: 100%;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 5px;
+    padding: 7px;
+    cursor: pointer;
+}
+/* End header seaction */
+
+/* Start Carousel seaction */
+.Carousel .box h1 {
+    font-size: 5rem;
+    padding: 5px;
+}
+@media (max-width:1249.9px) {
+    .Carousel .box h1 {
+        font-size: 2rem;
+        padding: 0px;
+        margin: 0px;
+        }  
+}
+@media (max-width:500px) {
+    .Carousel .box h1 {
+        font-size: 1rem;
+        padding: 0px;
+        margin: 0px;
+        }  
+}
+/* End Carousel seaction */
+
+
+/* Start about seaction */
+.about .description {
+    max-width: 800px;
+}
+.row .box {
+    background-color: var(--section-color);
+}
+.row .md_box {
+    background-color: var(--dark);
+}
+.row  .icon{
+    background-color: var(--orange);
+}
+
+/* End about seaction */
+
+/* Start Service seaction */
+.Service .box .num ,.md_box .num{
+    font-size: 8rem;
+    font-weight: 900;
+    padding: 3px;
+    color: white;
+}
+.row .box ,.Service .row .md_box {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+}
+.row .box p {
+    color: var(--dark);
+}
+.row .box:hover { 
+    background-color: var(--dark);
+}
+.row .box:hover .num ,.md_box .num{
+    color: var(--very-dark);
+}
+.row .box:hover p ,.md_box p{
+    color: rgb(205, 205, 205);
+}
+.row .box:hover h2 ,.md_box h2{
+    color: white;
+}
+/* End Service seaction */
+
+
+
+/* Start offer seaction */
+.offers .box{
+    background-image: url(../img/bg-banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 600px;
+}
+.offers .box::before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(43, 46, 74,0.7);
+}
+.offers .items .description{
+    font-size: 0.9rem;
+}
+@media (max-width:1249.9px) {
+    .offers .items h1 {
+        font-size: 4rem;
+        padding: 0px;
+        margin: 0px;
+        } 
+        .offers .items p {
+            font-size: 2rem;
+        }  
+}
+@media (max-width:500px) {
+    .offers .items h1 {
+        font-size: 2rem;
+        padding: 0px;
+        margin: 0px;
+        }  
+        .offers .items .description{
+            font-size: 0.4rem;
+        }
+        .offers .items p {
+            font-size: 1rem;
+            padding: 0px;
+            margin: 0px;
+        }  
+        .main-btn{
+            width: 100px;
+        }
+}
+  
+/* End offer seaction */
+
+
+/* Start find_car seaction */
+.find_car .rent_icon{
+    color: var(--orange);
+    padding-right: 5px;
+}
+/* End find_car seaction */
+
+
+/* Start team seaction */
+.team .box .owl-carousel {
+	max-width: 900px;
+	margin: 0 auto;
+    padding: 12px;
+}
+.team .box .owl-carousel .item {
+	text-align: center;
+	line-height: 2;
+	font-weight: 700;
+}
+.team .box .owl-carousel .item .card{
+    background-color: var(--section-color);
+}
+.team .box .owl-carousel .item .card p ,.client .item .box p { 
+    color: var(--icon-color);
+}
+.team .owl-item.active.center .card h5 ,.client .owl-item.active.center .box h2{
+    color: white;
+}
+.team .box .owl-carousel .owl-nav button.owl-prev{
+    z-index: 1;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+    top: 45%;
+    left: -2%;
+	transform: translatex(-50%);
+}
+.team .box .owl-carousel .owl-nav button.owl-next {
+	z-index: 1;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+    left: 100%;
+	transform: translatey(-50%);
+}
+.team .box .owl-nav button span {
+	font-size: 30px;
+	height: 100%;
+	background-color: var(--orange);
+    color: white;
+	display: block;
+	width: 100%;
+}
+/* End team seaction */
+
+/* Start banner seaction */
+.banner .box_left {
+    background-color: var(--dark);   
+}
+.banner .box_right {
+    background-color: var(--very-dark);   
+}
+.banner h1 {
+    color: white;
+}
+/* End banner seaction */
+
+
+/* Start CLIENT seaction */
+.client .owl-carousel .owl-item img
+{
+    height: 100px;
+    width: 100px;
+}
+.client .item .box .quote {
+    color: white;
+    font-size: 130px;
+}
+.client .item .box:hover .quote {
+    color: var(--very-dark);
+    font-size: 130px;
+}
+.client .owl-item.active.center .box , .team .owl-item.active.center .card{
+    background-color: var(--dark); 
+}
+/* End CLIENT seaction */
+
+/* Start contact seaction */
+.contact .form-box {
+    background-color: #F4F5F8;
+}
+.contact .contact-box {
+    background-color: var(--dark);
+}
+.contact .contact-box svg {
+    color: var(--orange);
+}
+/* End contact seaction */
+
+/* Start Logo seaction */
+.logo .owl-carousel  .owl-dot ,.client .owl-carousel  .owl-dot {
+    background-color: var(--dark);
+    height: 30px;
+    width: 30px;
+    margin: 0 5px ;
+}
+.logo .owl-carousel .owl-dots .owl-dot span, .client .owl-carousel .owl-dots .owl-dot span
+{
+    border-radius: 0px;
+    background-color: white;
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+}
+.logo .owl-dot.active,.client .owl-dot.active{
+    width: 40px;
+    height: 40px;
+    background: var(--orange);
+}
+.logo  .box ,.client  .box {
+    padding: 20px;
+    background-color: #F4F5F8;
+}
+.logo  .box img {
+    top: 0;
+    left: 0;
+}
+.logo .owl-item.active.center .box {
+    background-color: var(--very-dark);
+}
+/* End Logo seaction */
+ 
+/* Start footer seaction */
+.footer .first-footer {
+    background-color: var(--dark);
+}
+.links-list{
+    position: relative;
+    list-style: none;
+}
+.links-list  li{
+    margin: 8px;
+}
+.links-list  li::before {
+    content: '>';
+    position: absolute;
+    color: white;
+    font-size: 22px;
+    left: 0;
+}
+.links-list  li > a {
+    text-decoration: underline;
+}
+.footer .first-footer .social-icon-list li{
+    background-color: var(--very-dark);
+    padding: 10px;
+}
+.footer .first-footer .input-div input{
+    background-color: var(--very-dark);
+}
+.form-control:focus {
+    border-color: var(--orange);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px var(--orange);
+}
+.footer .first-footer .social-icon{
+    color: white;
+}
+.footer .second-footer {
+    background-color: var(--very-dark);
+}
+.footer .second-footer span {
+    color: var(--orange);
+}
+
+/* End footer seaction */
+
+
+
+
+
+
+
